@@ -10,7 +10,7 @@ O objetivo principal deste projeto é aprimorar uma aplicação de biblioteca ex
 No ambiente Linux:
 
 ```console
-git clone https://github.com/Giovanny04/djangomongo.git
+git clone https://github.com/Giovanny04/PIDJANGO.git
 cd django_biblioteca/
 virtualenv -p python3 venv
 source venv/bin/activate
@@ -22,7 +22,7 @@ python manage.py runserver
 No ambiente Windows:
 
 ```console
-git clone https://github.com/Giovanny04/djangomongo.git
+git clone https://github.com/Giovanny04/PIDJANGO.git
 cd django_biblioteca/
 virtualenv venv
 cd venv
