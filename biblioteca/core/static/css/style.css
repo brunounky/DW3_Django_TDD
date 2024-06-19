@@ -20,7 +20,7 @@ body {
 .logo {
     height: 50px;
     width: auto;
-    margin-left: 20px; /* Espaço entre a borda e a logo */
+    margin-left: 20px;
 }
 
 .site-name {
@@ -39,12 +39,15 @@ body {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    margin-right: 20px; /* Espaço entre a borda e o link */
+    margin-right: 20px;
 }
 
 .navbar-right a:hover {
     text-decoration: underline;
 }
+
+
+/*Parte da responsividade que nao funciona como eu queria, ele nao faz a barrinha de opções */
 
 @media (max-width: 768px) {
     .navbar {
