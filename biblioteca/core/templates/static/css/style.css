@@ -1,8 +1,66 @@
 body {
-    background-color: blue;
+    margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #ebddcb;
 }
 
-.navbar-brand{
-    color: blue;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #033649;
+    color: white;
+}
+
+.navbar-left, .navbar-center, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-left: 20px;
+}
+
+.site-name {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navbar-right a:hover {
+    text-decoration: underline;
+}
+
+
+/*Parte da responsividade que nao funciona como eu queria, ele nao faz a barrinha de opções */
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-left, .navbar-center, .navbar-right {
+        margin: 10px 0;
+    }
+
+    .navbar-center {
+        justify-content: flex-start;
+    }
 }
