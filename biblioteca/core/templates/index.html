@@ -4,37 +4,44 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="{% static 'css/logo.png' %}">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
         <title>Library Tech</title>
     </head>
 
     <body>
         <nav class="navbar">
             <div class="navbar-left"> 
-                <img src="/biblioteca/core/templates/static/img/logo.png" alt="Logo" class="logo">
+                <img src="{% static 'css/logo.png' %}" alt="Logo" class="logo">
             </div>
             <div class="navbar-center">
                 <a href="http://127.0.0.1:8000/" class="site-name">LibraryTech</a>
             </div>
-            <div class="navbar-right">
-                <a href="sobre-nos.html">Admin</a>
+            <div class="navbar-right-django">
+                <a href="http://127.0.0.1:8000/admin">Admin</a>
             </div>
             <div class="navbar-right">
-                <a href="sobre-nos.html">Desenvolvedores</a>
+                <a href="http://127.0.0.1:8000/desenvolvedores">Desenvolvedores</a>
             </div>
         </nav>
         <br>
             <h1> Biblioteca </h1>
             <h2> Sistema para cadastro de livros </h2>
         <br>
-        <form action={% url 'core:cadastro' %} novalidate method="GET">
-            <input type="submit" value="Cadastrar"/>              
-        </form>
-        <br>
-        <form action={% url 'core:listar' %} novalidate method="GET">
-            <input type="submit" value="Listar"/>              
-        </form>
+        <div class="teste">
+            <form action={% url 'core:cadastro' %} novalidate method="GET">
+                <input type="submit" value="Cadastrar"/>              
+            </form>
+            <br>
+            <form action={% url 'core:listar' %} novalidate method="GET">
+                <input type="submit" value="Listar"/>              
+            </form>
+        </div>
+        <div class="into">
+
+
+        </div>
     </body>
 
 </html>

@@ -4,6 +4,11 @@ body {
     background-color: #ebddcb;
 }
 
+.logo{
+    width: 200px;
+    height: auto;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -21,7 +26,7 @@ body {
 .logo {
     height: 50px;
     width: auto;
-    margin-left: 20px;
+    margin-left: 1px;
 }
 
 .site-name {
@@ -36,7 +41,18 @@ body {
     justify-content: center;
 }
 
+.teste{
+    margin-left: 50px;
+}
+
 .navbar-right a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.navbar-right-django a {
     color: white;
     text-decoration: none;
     font-size: 18px;
