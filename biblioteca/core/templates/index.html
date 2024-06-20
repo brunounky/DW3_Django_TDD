@@ -28,7 +28,7 @@
                         <a class="nav-link" href="http://127.0.0.1:8000/admin">Admin</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="http://127.0.0.1:8000/desenvolvedores">Desenvolvedores</a>
+                        <a class="nav-link" href="dev.html">Desenvolvedores</a>
                     </li>
                 </ul>
             </div>
@@ -45,12 +45,12 @@
                 <div class="card h-100">
                     <img src="{% static 'css/livros-pilha.jpg' %}" class="card-img-top" alt="Livros">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Cadastrar Novo</h5>
-                        <p class="card-text">Cadastrar suas referências bibliográficas é fundamental para garantir a credibilidade e a integridade de seus trabalhos acadêmicos e científicos. Ao registrar corretamente cada obra consultada, você:</p>
+                        <h5 class="card-title">Listar livros</h5>
+                        <p class="card-text">Dentro de nosso banco de dados temos milhares de livros que são referências bibliográficas usadas no meio acadêmico para auxiliar o estudo. Listando os livros cadastrados voce poderá: </p>
                         <ul class="list-group list-group-flush mb-3">
-                            <li class="list-group-item">Garante a integridade do seu trabalho</li>
-                            <li class="list-group-item">Facilita a organização das suas fontes</li>
-                            <li class="list-group-item">Melhora a qualidade acadêmica</li>
+                            <li class="list-group-item">Detalhes da obra</li>
+                            <li class="list-group-item">Possibilidade de excluir o livro</li>
+                            <li class="list-group-item">Ferramenta de edição do registro</li>
                         </ul>
                         <form action="{% url 'core:listar' %}" novalidate method="GET" class="mt-auto">
                             <input type="submit" class="btn btn-custom" value="Listar"/>              
