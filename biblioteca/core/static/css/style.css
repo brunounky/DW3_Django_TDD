@@ -38,11 +38,30 @@ body {
 .navbar-center {
     flex-grow: 1;
     display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
-.teste{
+.button-index{
     margin-left: 50px;
+}
+
+.text-card-cad{
+    text-align: justify;
+}
+
+.cad-center{
+    text-align: center;
+}
+
+.cad-center {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cad-center p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
 }
 
 .navbar-right a {
